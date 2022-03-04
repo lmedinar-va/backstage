@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: libertyits
+  description: The Liberty ITS organization
+  links:
+    - url: http://www.libertyits.com/
+      title: Website
+spec:
+  type: organization
+  profile:
+    displayName: Liberty ITS
+    email: info@example.com
+    picture: https://avatars.dicebear.com/api/identicon/libertyits.svg?background=%23fff&margin=25
+  children: [infrastructure]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: liberty-groups
+  description: A collection of all Liberty ITS Groups
+spec:
+  targets:
+    - ./arcadians-group.yaml
+    - ./pogchamps-group.yaml
+    - ./sustainment-group.yaml

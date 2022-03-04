@@ -6,5 +6,5 @@ metadata:
 spec:
   type: website
   lifecycle: production
-  owner: team-a
+  owner: arcadians
   system: artist-engagement-portal

@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: sustainment
+  description: Sustainment
+spec:
+  type: team
+  profile:
+    displayName: Sustainment
+    email: sustainment@example.com
+    picture: https://avatars.dicebear.com/api/identicon/sustainment@example.com.svg?background=%23fff&margin=25
+  parent: libertyits
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: matt.towle
+spec:
+  profile:
+    displayName: Matt Towle
+    email: matt.towle@example.com
+    picture: https://avatars.dicebear.com/api/identicon/matt.towle@example.com.svg?background=%23fff
+  memberOf: [sustainment]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: liberty.bot
+spec:
+  profile:
+    displayName: Liberty Bot
+    email: liberty-bot@example.com
+    picture: https://avatars.dicebear.com/api/identicon/liberty-bot@example.com.svg?background=%23fff
+  memberOf: [sustainment]

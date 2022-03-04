@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: arcadians
+  description: Pogchamps
+spec:
+  type: team
+  profile:
+    displayName: Pogchamps
+    email: arcadians@example.com
+    picture: https://avatars.dicebear.com/api/identicon/arcadians@example.com.svg?background=%23fff&margin=25
+  parent: libertyits
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: greg.bell
+spec:
+  profile:
+    displayName: Greg Bell
+    email: greg.bell@example.com
+    picture: https://avatars.dicebear.com/api/identicon/greg.bell@example.com.svg?background=%23fff
+  memberOf: [arcadians]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: lala.smith
+spec:
+  profile:
+    displayName: Lala Smith
+    email: lala-smith@example.com
+    picture: https://avatars.dicebear.com/api/avataaars/lala-smith@example.com.svg?background=%23fff
+  memberOf: [arcadians]

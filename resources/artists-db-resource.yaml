@@ -5,5 +5,5 @@ metadata:
   description: Stores artist details
 spec:
   type: database
-  owner: team-a
+  owner: pogchamps
   system: artist-engagement-portal
